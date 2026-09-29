@@ -2,44 +2,44 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   test-and-docs:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
-    strategy:
-      matrix:
-        python-version: [3.14]
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: '3.11'
+          cache: 'pip'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r codigos/requirements.txt
           pip install -r docs/requirements.txt
           pip install pytest
-          pip install -e .  # Install the package
+          pip install -e .
       - name: Run tests
         run: |
-          # Execute tests with project PYTHONPATH so imports like `from codigos import ...` work
-          PYTHONPATH=. pytest -q --maxfail=1 -q
+          PYTHONPATH=. pytest -q --maxfail=1
       - name: Generate test documentation
         run: |
-          # Generate per-test documentation pages for Sphinx
           PYTHONPATH=. python docs/scripts/generate_tests_docs.py
-      - name: Build docs (fail on warnings)
+      - name: Build docs
         run: |
-          # Create _static directory for Sphinx static files
           mkdir -p docs/_static
-          # Build Sphinx docs and treat warnings as errors
           PYTHONPATH=. sphinx-build -b html docs docs/_build/html -W
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
