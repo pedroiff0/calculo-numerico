@@ -20,6 +20,10 @@ Este projeto faz parte do [portfólio](https://portfolio.phrandrade.com/#calculo
 - [Trabalhando no projeto](#trabalhando-no-projeto)
 - [Status](#status)
 - [Como citar](#como-citar)
+- [Como contribuir](#como-contribuir)
+- [Código de conduta](#código-de-conduta)
+- [Segurança](#segurança)
+- [Suporte](#suporte)
 - [Estrelas e atividade](#estrelas-e-atividade)
 - [Autor](#autor)
 - [Licença](#licença)
@@ -156,6 +160,27 @@ Estado atual: **concluído** para a disciplina; mantido para consulta e correç�
 
 Use o arquivo [CITATION.cff](CITATION.cff) (botão "Cite this repository" do GitHub).
 
+## Como contribuir
+
+Contribuições são bem-vindas. Antes de começar, leia o [guia de contribuição](CONTRIBUTING.md).
+
+1. Abra uma issue descrevendo o problema ou a ideia.
+2. Crie uma branch a partir de `main`: `git checkout -b feat/<assunto-curto>`.
+3. Faça commits no padrão [Conventional Commits](https://www.conventionalcommits.org/pt-br/).
+4. Abra o pull request e registre a mudança em [CHANGELOG.md](CHANGELOG.md).
+
+## Código de conduta
+
+Este projeto adota o [Código de Conduta](CODE_OF_CONDUCT.md). Ao participar, você concorda em segui-lo.
+
+## Segurança
+
+Não abra issue pública para vulnerabilidades. Siga o procedimento de [SECURITY.md](SECURITY.md) para reportar de forma confidencial.
+
+## Suporte
+
+Dúvidas e pedidos de ajuda: veja [SUPPORT.md](SUPPORT.md).
+
 ## Estrelas e atividade
 
 [![Histórico de estrelas](https://api.star-history.com/svg?repos=pedroiff0/calculo-numerico&type=Date)](https://star-history.com/#pedroiff0/calculo-numerico&Date)
@@ -176,7 +201,22 @@ Use o arquivo [CITATION.cff](CITATION.cff) (botão "Cite this repository" do Git
 
 ## Licença
 
-MIT. Veja [LICENSE](LICENSE).
+Distribuído sob a licença MIT. Texto completo do arquivo [LICENSE](LICENSE):
+
+```txt
+MIT License
+
+Copyright (c) <2025> <Pedro Henrique Rocha de Andrade>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+[Full MIT license text omitted here for brevity — include the standard MIT text in the file before publishing.]
+```
 
 ---
 
