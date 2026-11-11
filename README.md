@@ -1,9 +1,6 @@
 # Cálculo Numérico
 
-[![CI](https://github.com/pedroiff0/calculo-numerico/actions/workflows/ci.yml/badge.svg)](https://github.com/pedroiff0/calculo-numerico/actions/workflows/ci.yml)
-[![Licença](https://img.shields.io/github/license/pedroiff0/calculo-numerico)](LICENSE)
-[![Estrelas](https://img.shields.io/github/stars/pedroiff0/calculo-numerico?style=flat&logo=github)](https://github.com/pedroiff0/calculo-numerico/stargazers)
-[![Status](https://img.shields.io/badge/status-concluído-informational)](#status)
+[![CI](https://github.com/pedroiff0/calculo-numerico/actions/workflows/ci.yml/badge.svg)](https://github.com/pedroiff0/calculo-numerico/actions/workflows/ci.yml) [![Licença](https://img.shields.io/github/license/pedroiff0/calculo-numerico)](LICENSE) [![Estrelas](https://img.shields.io/github/stars/pedroiff0/calculo-numerico?style=flat&logo=github)](https://github.com/pedroiff0/calculo-numerico/stargazers) [![Status](https://img.shields.io/badge/status-concluído-informational)](#status)
 
 Implementação em Python dos algoritmos da disciplina de Cálculo Numérico (2025.2, IFF Bom Jesus do Itabapoana), com 96 testes unitários, documentação Sphinx e um guia em LaTeX.
 
