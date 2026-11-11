@@ -26,6 +26,7 @@ Este projeto faz parte do [portfólio](https://portfolio.phrandrade.com/#calculo
 - [Suporte](#suporte)
 - [Estrelas e atividade](#estrelas-e-atividade)
 - [Autor](#autor)
+- [Contribuidores](#contribuidores)
 - [Licença](#licença)
 
 ## Resumo
@@ -197,7 +198,7 @@ Dúvidas e pedidos de ajuda: veja [SUPPORT.md](SUPPORT.md).
   </tr>
 </table>
 
-### Contribuidores
+## Contribuidores
 
 [![Contribuidores](https://contrib.rocks/image?repo=pedroiff0/calculo-numerico)](https://github.com/pedroiff0/calculo-numerico/graphs/contributors)
 
